@@ -1,1 +1,2 @@
-from restclient import RestClient
+# Allow convenient access, from <package> import <class>
+from .restclient import RestClient
