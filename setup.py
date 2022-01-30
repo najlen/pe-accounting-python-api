@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="pe-accounting-python-api",
-    version="0.5.0",
+    version="0.5.1",
     description="API bindings for https://www.accounting.pe/sv/",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/realpython/reader",
+    url="https://github.com/najlen/pe-accounting-python-api",
     author="Daniel Nihlén",
     author_email="daniel.nihlen@sdnit.se",
     license="MIT",
