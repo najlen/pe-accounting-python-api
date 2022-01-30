@@ -1,2 +1,2 @@
 # Allow convenient access, from <package> import <class>
-from .restclient import RestClient
+from .restclient import PeRestClient

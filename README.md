@@ -9,6 +9,7 @@ pip install pe-accounting-python-api
 ```
 
 ```python
-from pe_accounting_python_api import RESTCLIENT
-pe = RESTCLIENT(token=123123)
+from pe_accounting_python_api import RestClient
+pe_rest_client = RestClient(token=123123)
+print(pe_rest_client.company())
 ```

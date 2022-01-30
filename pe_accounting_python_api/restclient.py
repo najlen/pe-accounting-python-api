@@ -6,7 +6,7 @@ from loguru import logger
 API_URL = "https://my.accounting.pe/api/v1/company/{company_id}/"
 
 
-class RestClient:
+class PeRestClient:
     """
     PE accounting REST client Python binding.
     <https://api-doc.accounting.pe>
@@ -19,13 +19,12 @@ class RestClient:
             api_access_token (str): API access token received by PE Accounting.
         """
         logger.debug("Init RestClient")
-        RestClient.headers: dict = {
+        PeRestClient.headers: dict = {
             "X-Token": api_access_token,
             "User-Agent": "SDNit Python Automation",
             "Content-type": "application/json",
-            "Accept:": "application/json",
         }
-        RestClient.url = API_URL.format(company_id=company_id)
+        PeRestClient.url = API_URL.format(company_id=company_id)
 
     def company(self) -> dict:
         return self.http_request(verb="GET", path="info")
